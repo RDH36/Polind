@@ -1,0 +1,57 @@
+section{
+    background-color: #b3b3b325;
+    display: grid;
+    justify-content: center;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        color: $color-second;
+        font-family: "Ubuntu-Medium";
+    }
+    .container-section{
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 600px) {
+            display: grid;
+        }
+        div{
+            margin: 2rem;
+            padding: 2rem;
+            flex: 1;
+            &:nth-of-type(1){
+                h3{
+                    color: $color-primary;
+                    font-size: 2.5rem;
+                    margin-bottom: 2.5rem;
+                    font-family: "Ubuntu-Medium";
+                }
+                p{
+                    max-width: 100rem;
+                    color: $color-second;
+                    padding: 1rem;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    button{
+                        font-size: 1.2rem;
+                        padding: 1rem 3rem;
+                        margin-top: 3rem;
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                p{
+                    border: 1rem solid $color-primary;
+                    max-width: 100rem;
+                    img{
+                        transform: translate(-3rem, -3rem);
+                        max-width: 100%;
+                        width: inherit;
+                        height: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

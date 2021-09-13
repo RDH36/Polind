@@ -1,0 +1,3 @@
+@mixin header-shadow($color: $color-primary, $header-shadow-size: $shadow-size) {
+    text-shadow: $header-shadow-size $header-shadow-size $color;
+}

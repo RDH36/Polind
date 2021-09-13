@@ -1,0 +1,50 @@
+html {
+    // 10px div by def of 16px
+    font-size: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+        font-size: 7px;
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    box-sizing: inherit;
+    height: inherit;
+    width: inherit;
+    font-family: "Ubuntu-Light", sans-serif;
+}
+
+.container-header{
+    display: flex;
+    background-color: #1d1d1d47;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0.5px 0.5px 5px #000000;
+}
+
+@font-face{
+    font-family: "Ubuntu-Light";
+    src: url(../font/Ubuntu-Light.ttf);
+}
+
+@font-face{
+    font-family: "Ubuntu-Medium";
+    src: url(../font/Ubuntu-Medium.ttf);
+}
+
+@font-face{
+    font-family: "ubuntu";
+    src: url(../font/Ubuntu-bold.ttf);
+}
